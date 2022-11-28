@@ -1,0 +1,10 @@
+title: 3D
+template: 3d/post
+route: '/3d/{slug}'
+taxonomies:
+  - tags
+date: true
+date_behavior:
+  past: public
+  future: unlisted
+sort_dir: desc

@@ -1,0 +1,21 @@
+title: About
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: true
+  -
+    handle: content
+    field:
+      type: markdown
+      display: Content
+      cheatsheet: false
+      restrict_assets: false
+  -
+    handle: tags
+    field:
+      type: terms
+      taxonomies:
+        - tags

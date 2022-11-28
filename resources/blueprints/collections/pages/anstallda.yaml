@@ -1,0 +1,31 @@
+title: Anställda
+fields:
+  -
+    handle: namn
+    field:
+      type: text
+      display: Namn
+  -
+    handle: e_post
+    field:
+      type: text
+      display: e-post
+  -
+    handle: telefon
+    field:
+      type: text
+      display: Telefon
+  -
+    handle: bild
+    field:
+      type: assets
+      display: Bild
+      container: main
+      folder: img/anstallda
+      restrict: false
+  -
+    handle: tags
+    field:
+      type: terms
+      taxonomies:
+        - tags

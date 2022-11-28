@@ -1,0 +1,22 @@
+
+<div class="section">
+	<div class="foto-grid">
+	{{ collection:foto }}
+	<div class="">
+		<a href="{{ url }}" class="db link dim tc">
+			<div class="child cf w-100 h-100 absolute bg-black-70 tc white f3">
+				<div class="dt w-100 h-100">
+					<div class="dtc v-mid">
+						<h2 class="abel f4 f2-ns ma0 pa0 fw6 tc white">{{ title | upper }}</h2>
+					</div>
+				</div>
+			</div>
+			{{ image_main }}
+
+			<img src="{{ glide:url width="600" height="600" fit="crop"}}" alt="" class="w-100 db cover"/>
+			{{ /image_main }}
+		</a>
+	</div>
+	{{ /collection:foto }}
+</div>
+</div>

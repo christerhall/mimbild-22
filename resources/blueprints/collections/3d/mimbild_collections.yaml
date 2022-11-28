@@ -1,0 +1,52 @@
+title: 'Mimbild Collections'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Title
+          instructions: 'Titel för sidan'
+          localizable: true
+      -
+        handle: exempt
+        field:
+          type: textarea
+          display: Exempt
+          instructions: 'Förkortat text'
+      -
+        handle: text
+        field:
+          type: textarea
+          display: Text
+      -
+        handle: image_main
+        field:
+          type: assets
+          display: 'Image Main'
+          instructions: 'Image till första sidan. Denna bild skall vara mått'
+          container: main
+          folder: img
+      -
+        handle: image_artikel
+        field:
+          type: assets
+          display: 'Image Artikel'
+          instructions: 'Images som skall vara i artikeln'
+          container: main
+          folder: /
+      -
+        handle: video
+        field:
+          type: video
+          display: Video
+          width: 50
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+taxonomies: true
