@@ -164,7 +164,7 @@ body {
 }
 
 /* Navigation */
-header {
+.nav_header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -207,13 +207,55 @@ header {
 }
 
 
-/* Foto, Film, 3D, Make Section */
-.foto-grid {
+/* Foto, Film, 3D, Make Section 
+https://www.youtube.com/watch?v=P6UgYq3J3Qs 
+kolla för att positionera absolute
+*/
+.grid-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  position: relative;
-  
 }
+
+.card {
+  position: relative;
+}
+.card_link {
+  text-decoration: none;
+}
+
+.card_body{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em 0 0.3em 0;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% /0.3) 30%,
+    hsl(0 0% 0% / 1)
+  );
+
+}
+.card_title {
+  color: hsl(0, 0%, 75%);
+  text-align: center;
+  font-size: 0.8rem;
+
+}
+.card_image {
+  z-index: -1;
+}
+.card_image:hover {
+}
+
+
+/* Posts */
+.post_header {
+  background-color: blueviolet;
+  padding-top: 5em;
+}
+
+
 
 
 @media (min-width: 50em) {
@@ -302,11 +344,12 @@ header {
     padding-bottom: 0;
   }
   /* Foto, Film, 3D, Make Section */
-  .foto-grid {
+  .grid-card {
     grid-template-columns: repeat(3, 1fr);
-    
   }
-
+  .card_title {
+    font-size: 1rem;
+  }
 }
 
 
