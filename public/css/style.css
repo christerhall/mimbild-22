@@ -278,25 +278,25 @@ kolla för att positionera absolute
   } 
 
   .first-background {
-    background-image: url(/assets/hero/IMG_4442.jpg);
+    background-image: url(/assets/hero/img_4442.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .second-background {
-    background-image: url(/assets/hero/IMG_8727.jpg);
+    background-image: url(/assets/hero/img_8727.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .third-background {
-    background-image: url(/assets/hero/IMG_0874.jpg);
+    background-image: url(/assets/hero/img_0874.jpg);
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .forth-background {
-    background-image: url(/assets/hero/IMG_1150.jpg);
+    background-image: url(/assets/hero/img_1150.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
