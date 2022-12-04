@@ -282,7 +282,6 @@ kolla för att positionera absolute
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    max-height: 60vh;
   }
   .second-background {
     background-image: url(/assets/hero/img_8727.jpg);
