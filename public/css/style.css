@@ -251,8 +251,14 @@ kolla för att positionera absolute
 
 /* Posts */
 .post_header {
-  background-color: blueviolet;
   padding-top: 5em;
+  color: white;
+}
+.post_title {
+  
+}
+.post_text {
+  padding-top: 2em;
 }
 
 

@@ -1,0 +1,22 @@
+<section class="container post_header">
+
+	<div class="post_header">
+		<!--<div class="fr">
+				{{ date format="F j, Y" }}
+		</div>-->
+		<h1 class="post_title ">{{ title | upper }}</h1>
+		{{ exempt wrap="h3" }}
+	</div>
+
+	<article class="">
+		<p class="post_text">{{ text }}</p>
+		{{ image_main }}
+			<img src="{{ url }}" class="">
+		{{ /image_main }}
+		{{ image_artikel }}
+			<img src="{{ url }}" class="">
+		{{ /image_artikel }}
+
+	</article>
+
+</section>
