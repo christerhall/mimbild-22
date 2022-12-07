@@ -95,15 +95,21 @@ svg {
 https://www.youtube.com/watch?v=h3bTwCqX4ns
 */
 
-
+html {
+  height: 100%;
+}
 
 body {
     font-family: var(--ff-primary);
     background-color: #000;
 }
+main {
+  position: relative;
+}
 /* Section */
 .section {
   width: 100%;
+  min-height: 100%;
   background-color: #000;
   margin-inline: auto;
   z-index: -20;
@@ -162,6 +168,9 @@ body {
 .employe_name {
   font-weight: bold;
 }
+.address {
+  color: white;
+}
 
 /* Navigation */
 .nav_header {
@@ -205,7 +214,12 @@ body {
     text-transform: uppercase;
 
 }
-
+/* footer */
+.footer {
+  background-color: aqua;
+  color: white;
+  margin-top: auto;
+}
 
 /* Foto, Film, 3D, Make Section 
 https://www.youtube.com/watch?v=P6UgYq3J3Qs 
@@ -247,6 +261,7 @@ kolla för att positionera absolute
 }
 .card_image:hover {
 }
+
 
 
 /* Posts */
@@ -310,9 +325,8 @@ kolla för att positionera absolute
   .fifth-background {
     background-image: url(/assets/hero/kontakt.jpg);
     background-position: top right;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    max-height: 60vh;
 
   }
 
