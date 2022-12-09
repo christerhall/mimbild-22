@@ -268,13 +268,21 @@ kolla för att positionera absolute
   color: white;
 }
 .post_title {
-  
+  font-size: var(--fs-title);
 }
+.post_exempt {
+  font-size: var(--fs-subtitle);
+}
+
 .post_text {
   padding-top: 2em;
+  padding-bottom: 1em;
+  max-width: 40em;
 }
 
-
+article img {
+  padding-bottom: 2em;
+}
 
 
 @media (min-width: 50em) {
