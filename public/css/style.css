@@ -328,7 +328,7 @@ kolla för att positionera absolute
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 60vh;
   }
 
 /* Grid & flex */
