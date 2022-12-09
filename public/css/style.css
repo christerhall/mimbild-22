@@ -159,7 +159,7 @@ main {
   isolation: isolate;
   grid-template-row: repeat(3, 1fr);
   gap: 1rem;
-  
+  padding-top: 1em;
 }
 .card-employe {
   color: white;
@@ -325,9 +325,10 @@ kolla för att positionera absolute
   }
   .fifth-background {
     background-image: url(/assets/hero/kontakt.jpg);
-    background-position: bottom right;
+    background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 50vh;
   }
 
 /* Grid & flex */
@@ -337,20 +338,15 @@ kolla för att positionera absolute
     isolation: isolate;
   }
   .company_group {
-    background-color: #000 50%;
-    height: 50vh;
-    bottom: 0;
+    
   }
   .grid-employe {
     display: grid;
-    min-height: 100vh;
     isolation: isolate;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    padding-top: 4em;
   }
   .card-employe {
-    padding-top: 45vh;
     text-align: left;
   }
   .address {
