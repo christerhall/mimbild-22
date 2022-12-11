@@ -221,6 +221,7 @@ kolla för att positionera absolute
 .grid-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 5em;
 }
 
 .card {
@@ -380,6 +381,8 @@ article img {
   /* Foto, Film, 3D, Make Section */
   .grid-card {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 3em;
+
   }
   .card_title {
     font-size: 1rem;

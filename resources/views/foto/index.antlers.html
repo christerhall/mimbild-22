@@ -2,10 +2,10 @@
 <div class="grid-card">
 	
 	{{ collection:foto }}
-	<div class="card fl w-50 w-third-ns shadow-hover hide-child">
+	<div class="card">
 		<a href="{{ url }}" class="card_link">
 			<div class="card_body">
-				<h2 class="card_title abel f4 f2-ns ma0 pa0 fw6 tc white">{{ title | upper }}</h2>
+				<h2 class="card_title">{{ title | upper }}</h2>
 			</div>
 			{{ image_main }}
 			<img src="{{ glide:url width="600" height="600" fit="crop"}}" alt=""  class="card_image"/>
