@@ -96,13 +96,11 @@ https://www.youtube.com/watch?v=h3bTwCqX4ns
 */
 
 html {
-  height: 100%;
 }
 
 body {
     font-family: var(--ff-primary);
     background-color: #000;
-    height: 100vh;
 }
 main {
   position: relative;
@@ -110,7 +108,6 @@ main {
 /* Section */
 .section {
   width: 100%;
-  min-height: 100vh;
   background-color: #000;
   margin-inline: auto;
   z-index: -20;
@@ -126,19 +123,18 @@ main {
   width: min(100% - 2rem, var(--max-width));
   margin-inline: auto;
 }
-
 .hero-img {
   width: 100%;
   object-position: center;
-
+  padding-top: 3em;
 }
 .title {
     font-size: var(--fs-title);
     font-weight: bold;
     color: white;
     line-height: 1.1;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
 
 }
 .subtitle {
@@ -149,8 +145,7 @@ main {
 .description {
     font-size: var(--fs-body);
     color: white;
-    padding-top: 2rem;
-    padding-bottom: 4em;
+    padding-top: 2em;
 }
 
 /* section kontakta */
@@ -286,6 +281,10 @@ article img {
 
 
 @media (min-width: 50em) {
+  body {
+    height: 100vh;
+}
+
   /* Navigation */
   .nav {
     display: flex;
@@ -304,6 +303,7 @@ article img {
 }
   /* Section & Backgrounds */
   .section {
+    min-height: 100vh;
     background-color: transparent;
   } 
 
@@ -312,6 +312,7 @@ article img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
   }
   .second-background {
     background-image: url(/assets/hero/img_8727.jpg);
@@ -361,8 +362,9 @@ article img {
     text-align: left;
 
   }
-  .hero-img {
+  .hero-img:nth-of-type(1) {
     display: none;
+    padding-top: 10em;
   }
 
   .row-title {
