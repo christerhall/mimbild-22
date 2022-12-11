@@ -300,7 +300,7 @@ article img {
       justify-content: end;
   }
   /* footer */
-.footer {
+  .footer {
 }
   /* Section & Backgrounds */
   .section {
@@ -386,4 +386,9 @@ article img {
 }
 
 
-
+@media (min-width: 1800px) {
+  /* Foto, Film, 3D, Make Section */
+  .grid-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
