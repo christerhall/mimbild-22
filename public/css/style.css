@@ -160,6 +160,7 @@ main {
   color: white;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .employe_name {
   font-weight: bold;
