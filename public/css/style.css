@@ -1,6 +1,6 @@
 :root {
     --clr-primaary: ;
-    --clr-accent: ;
+    --clr-accent: rgb(204, 185, 145);
     --clr-third: ;
     --ff-primary: 'Montserrat', sans-serif ;
     
@@ -149,6 +149,22 @@ main {
 }
 
 /* section kontakta */
+
+.grid-company {
+  text-align: center;  
+  padding-top: 1em;
+}
+.card-company {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.company_title {
+  font-weight: bold;
+}
+
+
 .grid-employe {
   display: grid;
   isolation: isolate;
@@ -161,15 +177,10 @@ main {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 .employe_name {
   font-weight: bold;
-}
-.address {
-  color: white;
-  text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
 }
 
 /* Navigation */
@@ -205,16 +216,19 @@ main {
 }
 .nav__items {
     padding: 0.5rem;
-  
 
 }
 .nav__link {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-
 }
-
+.nav__link:hover {
+  color: var(--clr-accent);
+}
+.active {
+  color: var(--clr-accent);
+}
 /* Foto, Film, 3D, Make Section 
 https://www.youtube.com/watch?v=P6UgYq3J3Qs 
 kolla för att positionera absolute
@@ -263,9 +277,11 @@ kolla för att positionera absolute
 .post_header {
   padding-top: 5em;
   color: white;
+  
 }
 .post_title {
-  font-size: var(--fs-title);
+  font-size: var(--fs-subtitle);
+  text-align: center;
 }
 .post_exempt {
   font-size: var(--fs-subtitle);
@@ -274,7 +290,7 @@ kolla för att positionera absolute
 .post_text {
   padding-top: 2em;
   padding-bottom: 1em;
-  max-width: 40em;
+
 }
 
 article img {
@@ -291,7 +307,7 @@ article img {
   .nav {
     display: flex;
     flex-direction: row;
-    max-width: 70em;;
+    max-width: 70em;
   }
   .logo{
     width: 200px;
@@ -348,17 +364,19 @@ article img {
     min-height: 100vh;
     isolation: isolate;
   }
-  .company_group {
-    
-  }
+
   .grid-employe {
     display: grid;
     isolation: isolate;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 34% 22% 22% 22%;
     gap: 1rem;
+  }
+  .card-company {
+    text-align: left;
   }
   .card-employe {
     text-align: left;
+    font-size: 0.75rem;
   }
   .address {
     text-align: left;
