@@ -105,6 +105,18 @@ body {
 main {
   position: relative;
 }
+
+/* footer */
+.footer {
+  color: white;
+  margin-top: auto;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.svg {
+  color: white;
+}
 /* Section */
 .section {
   width: 100%;
@@ -197,11 +209,14 @@ main {
 .nav {
   display: flex;
   flex-direction: column;
-  margin:auto;
+  margin: auto;
 }
 .logo{
   width: 150px;
   margin: 0 auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
 }
 .main__nav {
     width: 100%;
@@ -318,6 +333,8 @@ article img {
   }
   /* footer */
   .footer {
+    color: white;
+    margin-top: auto;
 }
   /* Section & Backgrounds */
   .section {
