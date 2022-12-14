@@ -420,7 +420,7 @@ article img {
   /* Foto, Film, 3D, Make Section */
   .grid-card {
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 3em;
+    margin-top: 4em;
 
   }
   .card_title {
