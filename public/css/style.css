@@ -253,12 +253,22 @@ kolla för att positionera absolute
   grid-template-columns: repeat(2, 1fr);
   margin-top: 6em;
 }
-
 .card {
   position: relative;
 }
 .card_link {
   text-decoration: none;
+}
+.card_first {
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+.card_first_title {
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
 }
 
 .card_body{
@@ -435,9 +445,22 @@ article img {
   .card_title {
     font-size: 1rem;
   }
+  .card_first_title {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+  }
 
 }
 
+@media (min-width: 1200px) {
+  
+  .card_first_title {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 90%;
+  }
+}
 
 @media (min-width: 1800px) {
   /* Foto, Film, 3D, Make Section */
