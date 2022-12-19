@@ -199,6 +199,7 @@ main {
   text-decoration: none;
 }
 
+
 /* Navigation */
 .nav_header {
   position: fixed;
@@ -215,7 +216,7 @@ main {
   flex-direction: column;
   margin: auto;
 }
-.logo{
+.logo {
   width: 150px;
   margin: 0 auto;
   padding-top: 0.5em;
