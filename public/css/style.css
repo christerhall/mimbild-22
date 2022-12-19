@@ -321,6 +321,16 @@ kolla för att positionera absolute
 article img {
   padding-bottom: 2em;
 }
+.video {
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 2em;
+}
+iframe {
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 2em;
+}
 
 
 .slide-in-bottom {

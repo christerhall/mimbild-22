@@ -1,0 +1,29 @@
+<section class="container post_header">
+
+	<div class="post_header">
+		<!--<div class="fr">
+				{{ date format="F j, Y" }}
+		</div>-->
+		<h1 class="post_title ">{{ title | upper }}</h1>
+		<h2 class="post_exempt ">{{ exempt }}</h2>
+	</div>
+
+	<article class="w-100">
+
+		{{ text | wrap:p }}
+		{{ if video | is_embeddable }}
+		    <!-- Youtube and Video -->
+		    <iframe src="{{ video | embed_url }}" width="800" height="449" frameborder="0" class="video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		{{ else }}
+		    <!-- Other HTML5 video types -->
+		    <video src="{{ video | embed_url }}" autoplay allow="autoplay" class="video" controls></video>
+		{{ /if }}
+
+		{{ image_artikel }}
+			<p><img src="{{ url }}" class=""></p>
+		{{ /image_artikel }}
+
+	</article>
+
+
+</section>
