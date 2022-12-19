@@ -194,6 +194,10 @@ main {
 .employe_name {
   font-weight: bold;
 }
+.phone {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* Navigation */
 .nav_header {
