@@ -10,7 +10,7 @@
 
 	<article class="w-100">
 
-		{{ text | wrap:p }}
+		<p class="post_text">{{ text }}</p>
 		{{ if video | is_embeddable }}
 		    <!-- Youtube and Video -->
 		    <iframe src="{{ video | embed_url }}" width="800" height="449" frameborder="0" class="video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
