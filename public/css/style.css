@@ -195,11 +195,7 @@ main {
   font-weight: bold;
 }
 
-a[href^="phone"] {
-  color: inherit; /* Inherit text color of parent element. */
-  text-decoration: none; /* Remove underline. */
-  /* Additional css `propery: value;` pairs here */
-}
+a[href^=tel]{ color:#fff; text-decoration:none;}
 
 
 /* Navigation */
