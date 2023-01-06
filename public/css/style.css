@@ -251,6 +251,7 @@ a[href^=tel]{ color:#fff; text-decoration:none;}
 https://www.youtube.com/watch?v=P6UgYq3J3Qs 
 kolla för att positionera absolute
 */
+
 .grid-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -264,11 +265,19 @@ kolla för att positionera absolute
 }
 .card_first {
   color: white;
-  display: grid;
-  place-items: center;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+  grid-column: span 2;
+  min-height: 30vh;
+}
 .card_first_title {
+  font-size: 2rem;
+  text-align: center;
+}
+.card_first_subtitle {
   font-size: 0.8rem;
   text-align: center;
   width: 80%;
@@ -453,25 +462,26 @@ article iframe {
   .grid-card {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 4em;
-
   }
   .card_title {
     font-size: 1rem;
   }
   .card_first_title {
+    font-size: 2.5rem;
+    
+  }
+  .card_first_subtitle {
     font-size: 1.2rem;
-    text-align: center;
-    width: 90%;
+    width: 60%;
   }
 
 }
 
 @media (min-width: 1200px) {
   
-  .card_first_title {
+  .card_first_subtitle {
     font-size: 1.5rem;
-    text-align: center;
-    width: 90%;
+   
   }
 }
 
