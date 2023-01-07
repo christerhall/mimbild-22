@@ -162,6 +162,26 @@ main {
 
 /* section kontakta */
 
+.grid-columns {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 4em;
+}
+.employe_group {
+display: grid;
+place-items: center;
+
+}
+.employe {
+padding-left: 1em;
+
+}
+
 .grid-company {
   text-align: center;  
   padding-top: 1em;
@@ -196,6 +216,10 @@ main {
 }
 
 a[href^=tel]{ color:#fff; text-decoration:none;}
+
+
+
+
 
 
 /* Navigation */
@@ -424,6 +448,30 @@ article iframe {
     min-height: 100vh;
     isolation: isolate;
   }
+
+  /* kontakt */
+  .grid-columns {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 4em;
+    font-size: 0.8em;
+
+}
+.employe_group {
+  display: grid;
+  place-items: start;
+
+  grid-template-columns: 40% 1fr;
+}
+.employe {
+  padding-left: 1em;
+  
+}
 
   .grid-employe {
     display: grid;
