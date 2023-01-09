@@ -298,7 +298,8 @@ kolla för att positionera absolute
   min-height: 30vh;
 }
 .card_first_title {
-  font-size: 2rem;
+  font-size: var(--fs-title);
+  font-weight: bold;
   text-align: center;
 }
 .card_first_subtitle {
